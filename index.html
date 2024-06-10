@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a id="selected" href="/"> الرئيسية </a>
+          </li>
+          <li>
+            <a href="#"> باقات الإشتراك </a>
+          </li>
+          <li>
+            <a href="#"> تواصل معنا </a>
+          </li>
+        </ul>
+        <div class="buttons">
+          <button class="ghost">تسجيل الدخول</button>
+          <button class="selected primary">إنشاء حساب</button>
+          <button class="primary lang">
+            <div class="first">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-globe"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                <path d="M2 12h20" />
+              </svg>
+              اللغة
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-chevron-up"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="m8 14 4-4 4 4" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <div class="hero">
+        <div class="info">
+          <h1>أفضل تطبيق <span>لإدارة المهام</span></h1>
+          <p>
+            <span>Todo</span> هو من أفضل البرامج لإدارة المهام لسهولة استخدامه
+            بالإضافة إلي أنه يحتوي علي العديد من الادوات التي تساعد علي إدارة
+            المشاريع بشكل فعَّال لتوزيع المهام علي الفريق ومتابعتها بكل سهولة.
+          </p>
+          <button class="primary">جربه الأن مجاناً</button>
+        </div>
+        <img src="./assets/hero.png" alt="Hero" />
+      </div>
+    </header>
+
+    <div class="features">
+      <h1>أهم مميزات التطبيق 🎁</h1>
+      <div class="cards">
+        <div class="card">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="200"
+              height="200"
+              viewBox="0 0 48 48"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M28.972 19.468a7.484 7.484 0 1 0-7.484-7.484"
+              />
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M36.762 19.468a7.79 7.79 0 0 0-15.58 0c0 3.305 2.067 6.113 4.973 7.244v13.142l2.817 3.646l2.818-3.646V26.712c2.905-1.131 4.972-3.939 4.972-7.244Z"
+              />
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.587 24.834l-7.763 7.763l-.586 4.57l4.57-.585l7.764-7.764"
+              />
+            </svg>
+          </div>
+          <p>سهولة الإستخدام</p>
+        </div>
+        <div class="card">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="200"
+              height="200"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="m9.035 3.863l.182-1.276a.918.918 0 0 1 .818-.783a.914.914 0 0 1 .272 1.805zM7.25 5.5v2H3a.5.5 0 0 1-.5-.5V6a.5.5 0 0 1 .5-.5zM8 1.565A2.415 2.415 0 1 0 3.83 4H3a2 2 0 0 0-2 2v1a2 2 0 0 0 1 1.732V12a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V8.732A2 2 0 0 0 15 7V6a2 2 0 0 0-2-2h-.83A2.415 2.415 0 1 0 8 1.565m.75 4.185V7.5H13a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5H8.75zM7.25 9H3.5v3A1.5 1.5 0 0 0 5 13.5h2.25zm1.5 4.5V9h3.75v3a1.5 1.5 0 0 1-1.5 1.5zM6.783 2.587l.182 1.276l-1.272-.254a.914.914 0 0 1 .272-1.805a.919.919 0 0 1 .818.783"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <p>مجاني بالكامل</p>
+        </div>
+        <div class="card">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="200"
+              height="200"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M7.5 13A5.506 5.506 0 0 1 2 7.5C2 4.467 4.467 2 7.5 2S13 4.467 13 7.5S10.533 13 7.5 13m0-12a6.5 6.5 0 1 0 0 13a6.5 6.5 0 0 0 0-13m3 6H8V3.5a.5.5 0 0 0-1 0v4a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1"
+              />
+            </svg>
+          </div>
+          <p>المرونة</p>
+        </div>
+        <div class="card">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="200"
+              height="200"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M10.5 6V5a2.5 2.5 0 0 0-5 0v1zM4 5v1a3 3 0 0 0-3 3v3a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3V5a4 4 0 0 0-8 0m6.5 2.5H12A1.5 1.5 0 0 1 13.5 9v3a1.5 1.5 0 0 1-1.5 1.5H4A1.5 1.5 0 0 1 2.5 12V9A1.5 1.5 0 0 1 4 7.5zm-1.75 2a.75.75 0 0 0-1.5 0v2a.75.75 0 0 0 1.5 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <p>الأمان</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonials">
+      <div class="title">
+        <h1>ماذا قال عنا العملاء ؟</h1>
+        <div class="move">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-arrow-right"
+          >
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-arrow-left"
+          >
+            <path d="m12 19-7-7 7-7" />
+            <path d="M19 12H5" />
+          </svg>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <h3>أحمد********</h3>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>
+            لقد استمتعت باستخدام هذا التطبيق كان رائع للغاية وسهل الإستخدام
+            واشكر كل القائمين عليه.. بالتوفيق للجميع.
+          </p>
+        </div>
+        <div class="card">
+          <h3>محمد********</h3>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>جدا ممتاز هذا التطبيق شكرا ❤️❤️</p>
+        </div>
+        <div class="card">
+          <h3>سارة********</h3>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>
+            شكرا مرة صراحة التطبيق مره رهيب ومن أفضل التطبيقات إلي استخدمها في
+            هذا المجال ❤️❤️
+          </p>
+        </div>
+        <div class="card">
+          <h3>إبراهيم********</h3>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>
+            لقد استمتعت باستخدام هذا التطبيق كان رائع للغاية وسهل الاستخدام
+            واشكر كل القائمين عليه .. بالتوفيق للجميع
+          </p>
+        </div>
+      </div>
+      <div class="navigate">
+        <div class="icon-primary"></div>
+        <div class="icon"></div>
+        <div class="icon"></div>
+        <div class="icon"></div>
+      </div>
+    </div>
+
+    <div class="start">
+      <img src="./assets/shape-1.svg" alt="shape-1" />
+      <h1>كيف تبدأ؟</h1>
+      <div class="cards">
+        <div class="card one" aria-number="1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="80"
+            height="80"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-user-round-plus"
+          >
+            <path d="M2 21a8 8 0 0 1 13.292-6" />
+            <circle cx="10" cy="8" r="5" />
+            <path d="M19 16v6" />
+            <path d="M22 19h-6" />
+          </svg>
+          <h2>إنشاء حساب</h2>
+          <p>
+            قم بتسجيل بياناتك المطلوبة وتفعيل حسابك عن طريق الرسائل النصية أو
+            البريد الإلكتروني.
+          </p>
+        </div>
+        <div class="card tow" aria-number="2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="80"
+            height="80"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-lamp-desk"
+          >
+            <path d="m14 5-3 3 2 7 8-8-7-2Z" />
+            <path d="m14 5-3 3-3-3 3-3 3 3Z" />
+            <path d="M9.5 6.5 4 12l3 6" />
+            <path d="M3 22v-2c0-1.1.9-2 2-2h4a2 2 0 0 1 2 2v2H3Z" />
+          </svg>
+          <h2>إنشاء مساحة عمل</h2>
+          <p>قم بإنشاء مساحة عمل تضم كل المشاريع التي تقوم بإدارتها.</p>
+        </div>
+        <div class="card three" aria-number="3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="80"
+            height="80"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-list-todo"
+          >
+            <rect x="3" y="5" width="6" height="6" rx="1" />
+            <path d="m3 17 2 2 4-4" />
+            <path d="M13 6h8" />
+            <path d="M13 12h8" />
+            <path d="M13 18h8" />
+          </svg>
+          <h2>إضافة المهام</h2>
+          <p>
+            قم بإضافة كل المهام الخاصة بالمشروع في الأعمدة ومتابعة التقدم في
+            المهام.
+          </p>
+        </div>
+        <div class="card four" aria-number="4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="80"
+            height="80"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-users-round"
+          >
+            <path d="M18 21a8 8 0 0 0-16 0" />
+            <circle cx="10" cy="8" r="5" />
+            <path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3" />
+          </svg>
+          <h2>إضافة الأعضاء</h2>
+          <p>
+            تستطيع إضافة الأعضاء إلي المشروع أو إضافة بعض الأعضاء لبعض المهام
+            دون المهام الأخري.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
