@@ -28,20 +28,20 @@ button {
 }
 
 h1 {
-  font-size: 3rcap;
+  font-size: 2rem;
 }
 h1 span {
-  font-size: 3rcap;
+  font-size: 2rem;
   color: var(--secondary);
 }
 
 @media (max-width: 1024px) {
   h1 {
-    font-size: 2rcap;
+    font-size: 1.8rem;
   }
 
   h1 span {
-    font-size: 2rcap;
+    font-size: 2rem;
     color: var(--secondary);
   }
 }
@@ -261,10 +261,11 @@ body {
       display: flex;
       gap: 1rem;
       margin: 2rem 0;
+      width: 100%;
 
       .card {
-        width: 40dvw;
-        height: 20dvh;
+        width: 100%;
+        height: 50%;
         border-radius: 20px;
         padding: 1rem;
         border: 2px solid rgb(198, 195, 195);
@@ -282,7 +283,7 @@ body {
 
         .card {
           height: fit-content;
-          width: fit-content;
+          width: 90%;
         }
       }
     }
@@ -308,8 +309,25 @@ body {
   }
 
   .start {
-    margin: 3rem 0;
-    padding-right: 8rem;
+    margin: 5rem 0 10rem 0;
+    padding: 0 2rem;
+    position: relative;
+
+    .shapes {
+      position: relative;
+      z-index: -1;
+
+      img[alt="shape-1"] {
+        position: absolute;
+        left: 0;
+      }
+      img[alt="shape-2"] {
+        position: absolute;
+        right: 5%;
+        top: -3rem;
+        transform: rotate(160deg);
+      }
+    }
 
     h1 {
       margin-bottom: 3rem;
@@ -345,7 +363,7 @@ body {
         content: attr(aria-number);
         width: 1rem;
         height: 1rem;
-        padding: 0.8rem;
+        padding: 0.8rem 0.8rem 0.9rem 0.8rem;
         border-radius: 50%;
         position: absolute;
         top: -10%;
@@ -360,6 +378,140 @@ body {
       .card:hover {
         box-shadow: 0px 2px 15px rgb(111, 109, 109);
         transform: scale3d(1.02, 1.02, 1.02);
+        cursor: pointer;
+      }
+    }
+
+    @media screen and (max-width: 1180px) {
+      padding-right: 2rem;
+
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .shapes {
+        display: none;
+      }
+    }
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    margin: 2rem;
+    background: #d6d5d5;
+  }
+  h6 {
+    margin: auto;
+    width: fit-content;
+  }
+
+  footer {
+    width: 90%;
+    margin: 3rem auto;
+
+    .links {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+
+      .list {
+        display: flex;
+        gap: 5rem;
+        margin-right: 1rem;
+
+        ul {
+          margin-right: 0.8rem;
+          margin-top: 0.3rem;
+          list-style: none;
+        }
+      }
+
+      .social {
+        display: flex;
+        gap: 0.5rem;
+        margin-left: 1rem;
+      }
+    }
+
+    .newsletter {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      background-color: var(--bg);
+      border-radius: 1.5rem;
+      padding: 1rem 3rem;
+
+      .flex {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      img {
+        width: 80px;
+        background-color: var(--accent);
+        border-radius: 1.5rem;
+        padding: 1rem;
+      }
+      .input {
+        display: flex;
+        background-color: white;
+        border-radius: 0.5rem;
+        padding: 0.6rem;
+
+        input {
+          border: none;
+          width: 30rem;
+        }
+
+        input:focus-visible {
+          outline: none;
+        }
+
+        button {
+          border: none;
+          padding: 0.5rem 0.8rem;
+          border-radius: 1rem;
+          background-color: var(--primary);
+          color: white;
+        }
+
+        button:hover {
+          background-color: var(--secondary);
+        }
+      }
+    }
+
+    @media screen and (max-width: 1280px) {
+      .newsletter {
+        flex-direction: column;
+      }
+
+      input {
+        width: 1rem;
+      }
+    }
+
+    @media screen and (max-width: 1080px) {
+      .newsletter {
+        padding: 1rem 1rem;
+      }
+    }
+
+    @media screen and (max-width: 787px) {
+      input {
+        width: 80% !important;
+      }
+
+      .links {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2rem;
       }
     }
   }
